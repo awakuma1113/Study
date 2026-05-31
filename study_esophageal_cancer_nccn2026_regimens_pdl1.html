@@ -1,1 +1,158 @@
-TEST
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>食道癌：概要・根治治療・進行再発治療｜内科医の勉強ノート</title>
+  <meta name="description" content="食道癌について、概要、根治を狙った治療、根治が見込めない場合の治療に分けて整理した内科医向け個人勉強ノート。NCCN 2026と日本の臨床試験を踏まえたStudy用HTML。">
+  <style>
+    :root{--bg:#f7f8fb;--paper:#fff;--ink:#1f2937;--muted:#667085;--line:#e5e7eb;--brand:#0f766e;--brand2:#115e59;--soft:#ccfbf1;--warn:#fff7ed;--warnline:#fed7aa;--redsoft:#fef2f2;--redline:#fecaca;--blue:#eff6ff;--blueline:#bfdbfe;--shadow:0 12px 30px rgba(15,23,42,.08)}
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#f0fdfa 0,#f7f8fb 260px);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8}
+    a{color:var(--brand2)} .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 64px}.hero{background:rgba(255,255,255,.92);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:24px;padding:30px;margin:18px 0 26px}.kicker{display:inline-flex;gap:8px;align-items:center;color:var(--brand2);font-weight:700;font-size:.9rem;background:var(--soft);padding:4px 12px;border-radius:999px}.hero h1{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.25;margin:16px 0 12px}.lead{font-size:1.05rem;color:#344054;margin:0}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:.86rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;color:#475467}.grid{display:grid;grid-template-columns:280px 1fr;gap:22px}.toc{position:sticky;top:16px;align-self:start;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}.toc h2{font-size:1rem;margin:0 0 10px}.toc a{display:block;text-decoration:none;color:#344054;border-radius:10px;padding:8px 10px}.toc a:hover{background:#f1f5f9}main{min-width:0}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px;margin-bottom:20px;box-shadow:var(--shadow)}h2{font-size:1.65rem;line-height:1.35;margin:0 0 16px;border-left:6px solid var(--brand);padding-left:12px}h3{font-size:1.22rem;margin:26px 0 10px;color:#0f172a}h4{margin:18px 0 8px}.note,.warn,.clinical{border-radius:18px;padding:16px 18px;margin:16px 0}.note{background:#f8fafc;border:1px solid var(--line)}.warn{background:var(--warn);border:1px solid var(--warnline)}.clinical{background:var(--blue);border:1px solid var(--blueline)}.danger{background:var(--redsoft);border:1px solid var(--redline);border-radius:18px;padding:16px 18px;margin:16px 0}.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.mini{border:1px solid var(--line);border-radius:16px;padding:14px;background:#fff}.mini h4{margin:0 0 6px;color:var(--brand2)}table{width:100%;border-collapse:separate;border-spacing:0;margin:14px 0 22px;font-size:.92rem;overflow:hidden;border:1px solid var(--line);border-radius:16px}th,td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top}th{background:#f0fdfa;color:#134e4a;text-align:left;font-weight:700}tr:last-child td{border-bottom:0}.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.small{font-size:.9rem;color:var(--muted)}.pill{display:inline-block;border-radius:999px;padding:2px 9px;font-size:.78rem;font-weight:700}.p1{background:#dcfce7;color:#166534}.p2{background:#fef9c3;color:#854d0e}.p3{background:#fee2e2;color:#991b1b}.ref{font-size:.9rem;color:#475467}.ref li{margin-bottom:6px}.footer{color:#667085;font-size:.86rem;text-align:center;margin-top:34px}@media(max-width:860px){.grid{grid-template-columns:1fr}.toc{position:static}.cols{grid-template-columns:1fr}.card{padding:20px}.hero{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="kicker">内科医の勉強ノート｜Study</div>
+      <h1>食道癌：概要・根治治療・進行再発治療</h1>
+      <p class="lead">食道癌、特に日本で多い食道扁平上皮癌を中心に、概要、根治を狙った治療、根治が見込めない場合の治療に分けて整理する。個人学習用であり、実臨床では最新の添付文書、国内ガイドライン、施設方針、患者背景を確認する。</p>
+      <div class="meta"><span class="tag">最終更新：2026年5月31日</span><span class="tag">NCCN v2.2026反映</span><span class="tag">Study draft</span><span class="tag">GitHub保存用</span></div>
+    </header>
+
+    <div class="grid">
+      <nav class="toc">
+        <h2>目次</h2>
+        <a href="#overview">1. 概要</a>
+        <a href="#curative">2. 根治を狙った治療</a>
+        <a href="#palliative">3. 根治が見込めない場合の治療</a>
+        <a href="#regimens">4. 一次治療レジメン選択</a>
+        <a href="#pdl1">5. PD-L1別HR：チスレリズマブのPFS</a>
+        <a href="#references">参考文献</a>
+      </nav>
+
+      <main>
+        <section id="overview" class="card">
+          <h2>1. 概要</h2>
+          <p>日本の食道癌は扁平上皮癌が多く、飲酒、喫煙、ALDH2関連の飲酒後フラッシングなどが重要な背景となる。一方、欧米では胃食道逆流症や肥満を背景とする腺癌の比率が高い。治療方針は、組織型、局在、深達度、リンパ節転移、遠隔転移、耐術能、嚥下・栄養状態によって大きく変わる。</p>
+          <div class="cols">
+            <div class="mini"><h4>診断・病期評価</h4><p>内視鏡生検、造影CT、FDG-PET/CT、EUS、必要に応じて気管支鏡を組み合わせる。早期癌では内視鏡的切除が診断と治療を兼ねることがある。</p></div>
+            <div class="mini"><h4>NCCN 2026での初期評価</h4><p>MSI/MMR、PD-L1は新規診断例で評価。進行・再発腺癌が疑われる場合はHER2、CLDN18.2を評価し、NGSも検討する。</p></div>
+          </div>
+          <div class="clinical"><strong>自分用メモ：</strong>食道癌は「局所制御」と「全身制御」と「嚥下・栄養」の3軸で考える。腫瘍内科的には、根治可能例でも手術・放射線・内視鏡・栄養チームとの連携が必須。</div>
+        </section>
+
+        <section id="curative" class="card">
+          <h2>2. 根治を狙った治療</h2>
+          <h3>早期癌</h3>
+          <p>粘膜内癌を中心とする早期病変では、内視鏡的切除（EMR/ESD）が治療選択肢となる。切除標本で深達度、脈管侵襲、分化度、断端を評価し、経過観察でよいか、追加治療が必要かを判断する。</p>
+          <table>
+            <thead><tr><th>状況</th><th>治療の考え方</th><th>注意点</th></tr></thead>
+            <tbody>
+              <tr><td>pTis/T1a</td><td>内視鏡的切除が中心</td><td>病変範囲、周在性、狭窄リスクを考慮</td></tr>
+              <tr><td>表在T1b</td><td>低リスクなら内視鏡治療で完結することもある</td><td>SM浸潤、LVI、低分化、断端陽性では追加治療を検討</td></tr>
+              <tr><td>外科適応あり</td><td>食道切除を検討</td><td>侵襲が大きく、年齢・PS・呼吸機能・栄養状態が重要</td></tr>
+            </tbody>
+          </table>
+
+          <h3>局所進行扁平上皮癌</h3>
+          <p>日本ではJCOG1109を踏まえて、cStage II/IIIの胸部食道扁平上皮癌では術前DCF療法＋手術が重要な標準治療として位置づけられる。一方、NCCNでは扁平上皮癌に対して術前化学放射線療法がpreferredとして整理されており、日米で治療戦略の重心がやや異なる。</p>
+          <div class="note"><strong>日本の理解：</strong>耐術能があり切除可能なら、術前DCF→手術を中心に考える。耐術能がない場合、手術拒否、頸部食道癌、臓器温存を重視する状況では根治的化学放射線療法が重要。</div>
+          <div class="note"><strong>NCCNの理解：</strong>cT1b-cT2N+またはcT3-cT4aなどでは、術前CRTまたは根治的CRTが選択肢。術前CRT後R0切除で病理学的遺残がある場合は術後ニボルマブがcategory 1。</div>
+
+          <h3>cT4b・境界切除不能</h3>
+          <p>大動脈、気管、気管支などへの浸潤が疑われる場合は、根治的化学放射線療法、導入化学療法、救済手術の可能性を多職種で検討する。NCCN v2.2026では、気管・大血管・心臓への浸潤を伴うcT4bでは化学療法単独を考慮する記載もあり、無理な放射線・手術の前に安全性を確認する。</p>
+        </section>
+
+        <section id="palliative" class="card">
+          <h2>3. 根治が見込めない場合の治療</h2>
+          <p>遠隔転移、切除不能局所進行、根治治療後再発では、全身薬物療法と緩和的支持療法を並行して行う。食道癌では嚥下困難、出血、穿孔、瘻孔、気道狭窄、栄養障害が治療選択に直結する。</p>
+          <div class="cols">
+            <div class="mini"><h4>PS良好（ECOG 0–2）</h4><p>全身薬物療法を検討。PD-L1、MSI/MMR、組織型、腫瘍量、症状、腎機能で選択。</p></div>
+            <div class="mini"><h4>PS不良（ECOG 3以上）</h4><p>薬物療法の利益は限定的になりやすく、緩和照射、ステント、栄養、疼痛緩和、在宅支援を優先する。</p></div>
+          </div>
+          <div class="warn"><strong>実臨床メモ：</strong>食道癌の進行再発治療では「腫瘍縮小が必要か」が重要。有症状・高腫瘍量・肝転移・気道/食道狭窄では、Nivo＋IpiよりもFP＋ICIのような奏効割合を期待しやすい治療を選びやすい。</div>
+        </section>
+
+        <section id="regimens" class="card">
+          <h2>4. 一次治療レジメン選択：進行再発食道扁平上皮癌</h2>
+          <p>NCCN v2.2026では、進行再発食道扁平上皮癌の一次治療として、フッ化ピリミジン＋白金製剤＋ニボルマブ、ペムブロリズマブ、チスレリズマブ、またニボルマブ＋イピリムマブなどが整理されている。国内実装では添付文書上の併用薬、投与間隔、保険適用を確認する。</p>
+          <table>
+            <thead><tr><th>レジメン</th><th>根拠試験</th><th>特徴</th><th>使いやすい場面</th></tr></thead>
+            <tbody>
+              <tr><td>FP＋ニボルマブ</td><td>CheckMate 648</td><td>OS改善。奏効割合も比較的高い。</td><td>高腫瘍量、有症状、早期縮小を期待したい症例。</td></tr>
+              <tr><td>FP＋ペムブロリズマブ</td><td>KEYNOTE-590</td><td>CPS高発現で特に強い。3週サイクル。</td><td>CPS高発現、FP 3週サイクルで組みたい症例。</td></tr>
+              <tr><td>FP＋チスレリズマブ</td><td>RATIONALE-306</td><td>OS/PFSとも良好。特にPFSの見え方が印象的。</td><td>FP適格で、PD-L1低〜中等度発現層まで上乗せを期待したい症例。</td></tr>
+              <tr><td>ニボルマブ＋イピリムマブ</td><td>CheckMate 648</td><td>化学療法なし。奏効までの速度はFP＋ICIより弱い。</td><td>TPS/CPS陽性、低腫瘍量、症状軽微、入院回避希望など。</td></tr>
+              <tr><td>化学療法単独</td><td>従来標準</td><td>ICI不適格例で選択。</td><td>活動性自己免疫疾患、重症irAE既往、ICI禁忌など。</td></tr>
+            </tbody>
+          </table>
+          <div class="danger"><strong>注意：</strong>ニボルマブ＋イピリムマブは魅力的だが、初期増悪が致命的になりうる症例では慎重。肝転移・高腫瘍量・狭窄症状・気道リスクがある場合は、FP＋ICIを優先しやすい。</div>
+        </section>
+
+        <section id="pdl1" class="card">
+          <h2>5. PD-L1発現別HRで見る：チスレリズマブのPFSはかなり印象的</h2>
+          <p>直接比較ではないが、各第III相試験を並べると、チスレリズマブ＋化学療法はPD-L1発現別解析でPFSの見え方が強い。特にRATIONALE-306では、TAP/CPSの高発現だけでなく、1〜10%程度の低〜中等度発現層でもPFS HRが比較的良好に見える。</p>
+
+          <h3>RATIONALE-306：チスレリズマブ＋化学療法 vs 化学療法</h3>
+          <table>
+            <thead><tr><th>PD-L1評価</th><th>PD-L1発現</th><th class="num">OS HR</th><th class="num">PFS HR</th><th>自分用メモ</th></tr></thead>
+            <tbody>
+              <tr><td>TAP score</td><td>≥10%</td><td class="num">0.71</td><td class="num"><span class="pill p1">0.49</span></td><td>高発現ではOS・PFSとも良好。PFSが強い。</td></tr>
+              <tr><td>TAP score</td><td>5%〜&lt;10%</td><td class="num"><span class="pill p1">0.50</span></td><td class="num"><span class="pill p1">0.52</span></td><td>中間発現層で非常に印象的。</td></tr>
+              <tr><td>TAP score</td><td>1%〜&lt;5%</td><td class="num">0.86</td><td class="num">0.74</td><td>OSは弱めだがPFSは上乗せ傾向。</td></tr>
+              <tr><td>TAP score</td><td>&lt;1%</td><td class="num"><span class="pill p3">1.21</span></td><td class="num">0.83</td><td>OS上乗せは見えにくい。</td></tr>
+              <tr><td>CPS</td><td>≥10</td><td class="num">0.64</td><td class="num"><span class="pill p1">0.45</span></td><td>高発現ではかなり強い。</td></tr>
+              <tr><td>CPS</td><td>5〜&lt;10</td><td class="num">0.72</td><td class="num">0.74</td><td>OS上乗せあり。</td></tr>
+              <tr><td>CPS</td><td>1〜&lt;5</td><td class="num">0.71</td><td class="num">0.66</td><td>CPS 1以上なら低発現寄りでも悪くない。</td></tr>
+              <tr><td>CPS</td><td>&lt;1</td><td class="num"><span class="pill p3">1.36</span></td><td class="num">0.76</td><td>OSでは上乗せが見えにくい。</td></tr>
+            </tbody>
+          </table>
+
+          <h3>CheckMate 648：ニボルマブ併用療法 vs 化学療法</h3>
+          <table>
+            <thead><tr><th>PD-L1評価</th><th>PD-L1発現</th><th class="num">Nivo＋Chemo OS HR</th><th class="num">Nivo＋Ipi OS HR</th><th>自分用メモ</th></tr></thead>
+            <tbody>
+              <tr><td>CPS</td><td>≥10</td><td class="num">0.63</td><td class="num">0.64</td><td>高発現では両者とも良好。</td></tr>
+              <tr><td>CPS</td><td>&lt;10</td><td class="num">0.78</td><td class="num">0.89</td><td>Nivo＋Chemoの方が使いやすそう。</td></tr>
+              <tr><td>CPS</td><td>≥5</td><td class="num">0.69</td><td class="num">0.72</td><td>どちらも有効性あり。</td></tr>
+              <tr><td>CPS</td><td>&lt;5</td><td class="num">0.74</td><td class="num">0.87</td><td>Ipi併用はやや弱い。</td></tr>
+              <tr><td>CPS</td><td>≥1</td><td class="num">0.69</td><td class="num">0.76</td><td>CPS 1以上なら上乗せあり。</td></tr>
+              <tr><td>CPS</td><td>&lt;1</td><td class="num">0.98</td><td class="num">1.00</td><td>OS上乗せはほぼ見えない。</td></tr>
+            </tbody>
+          </table>
+
+          <h3>KEYNOTE-590：ペムブロリズマブ＋化学療法 vs 化学療法</h3>
+          <table>
+            <thead><tr><th>PD-L1評価</th><th>対象</th><th class="num">OS HR</th><th class="num">PFS HR</th><th>自分用メモ</th></tr></thead>
+            <tbody>
+              <tr><td>CPS ≥10</td><td>ESCCかつCPS ≥10</td><td class="num"><span class="pill p1">0.57</span></td><td class="num">—</td><td>高発現ESCCでは非常に強い。</td></tr>
+              <tr><td>CPS ≥10</td><td>全組織型</td><td class="num">0.62</td><td class="num">0.51</td><td>高発現では明確に良好。</td></tr>
+              <tr><td>CPS &lt;10</td><td>全組織型・探索的解析</td><td class="num">0.86</td><td class="num">0.80</td><td>低発現では上乗せは弱め。</td></tr>
+              <tr><td>全体</td><td>ESCC</td><td class="num">0.72</td><td class="num">0.65</td><td>ESCC全体では有効。</td></tr>
+              <tr><td>全体</td><td>全ランダム化集団</td><td class="num">0.73</td><td class="num">0.65</td><td>全体集団でも有効。</td></tr>
+            </tbody>
+          </table>
+
+          <div class="clinical"><strong>強めの勉強メモ：</strong>チスレリズマブは「PD-L1陰性でも強い」とまでは言いにくいが、CPS/TAP 1以上、特に5%以上ではPFSの見え方がかなりよい。OSだけで比較すると慎重な解釈が必要だが、腫瘍制御・増悪抑制という観点では、RATIONALE-306のPFS HRは印象的。</div>
+          <div class="warn"><strong>解釈の限界：</strong>これは試験間の横並び比較であり、患者背景、PD-L1測定法、化学療法バックボーン、地域差、後治療が異なる。チスレリズマブがニボルマブやペムブロリズマブより優れていることを示す直接比較ではない。</div>
+        </section>
+
+        <section id="references" class="card">
+          <h2>参考文献・参照資料</h2>
+          <ol class="ref">
+            <li>Doki Y, et al. Nivolumab Combination Therapy in Advanced Esophageal Squamous-Cell Carcinoma. N Engl J Med. 2022;386:449-462.</li>
+            <li>Sun JM, et al. Pembrolizumab plus chemotherapy versus chemotherapy alone for first-line treatment of advanced oesophageal cancer (KEYNOTE-590). Lancet. 2021;398:759-771.</li>
+            <li>Xu J, et al. Tislelizumab plus chemotherapy versus placebo plus chemotherapy as first-line treatment for advanced or metastatic oesophageal squamous cell carcinoma (RATIONALE-306). Lancet Oncol. 2023;24:483-495.</li>
+            <li>日本食道学会. 食道癌診療ガイドライン 2022年版.</li>
+            <li>NCCN Clinical Practice Guidelines in Oncology. Esophageal and Esophagogastric Junction Cancers. Version 2.2026.</li>
+            <li>PMDA. テビムブラ点滴静注100mg 審査報告書・添付文書関連資料.</li>
+          </ol>
+          <p class="small">本ページは個人学習用。NCCNや講義スライドの図表・アルゴリズムは転載せず、公開文献・ガイドラインの要点を自分用に再構成した。</p>
+        </section>
+      </main>
+    </div>
+    <div class="footer">© 内科医の勉強ノート / Study</div>
+  </div>
+</body>
+</html>
